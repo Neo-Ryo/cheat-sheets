@@ -1,4 +1,4 @@
-### NMAP
+# NMAP
 ## ENUM Open port and vulnerability script
 nmap -sV -sC -p- MACHINE_IP
 ## ENUM shares for smb 
@@ -6,12 +6,12 @@ nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse MACHINE_IP
 ## ENUM network file system
 nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount MACHINE_IP
 
-### SMB
+# SMB
 ## SMBCLIENT Linux
 smbclient //MACHINE_IP/<path>
 ## Download files in a repo
 smbget -R smb://MACHINE_IP/anonymous
 
-### SSH
+# SSH
 ## login ssh with a private key
 ssh -i id_rsa <user>@MACHINE_IP
