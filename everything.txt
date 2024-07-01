@@ -1,4 +1,6 @@
 ### NMAP
+## ENUM Open port and vulnerability script
+nmap -sV -sC -p- MACHINE_IP
 ## ENUM shares for smb 
 nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse MACHINE_IP
 ## ENUM mount
