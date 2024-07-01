@@ -11,3 +11,7 @@ nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount MACHINE_IP
 smbclient //MACHINE_IP/<path>
 ## Download files in a repo
 smbget -R smb://MACHINE_IP/anonymous
+
+### SSH
+## login ssh with a private key
+ssh -i id_rsa <user>@MACHINE_IP
