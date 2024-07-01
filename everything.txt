@@ -3,7 +3,7 @@
 nmap -sV -sC -p- MACHINE_IP
 ## ENUM shares for smb 
 nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse MACHINE_IP
-## ENUM mount
+## ENUM network file system
 nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount MACHINE_IP
 
 ### SMB
