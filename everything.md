@@ -1,6 +1,6 @@
 # NMAP
 ## ENUM Open port and vulnerability script
-`nmap -sV -sC -oN -p- MACHINE_IP` (`-oN` is for normal output)
+`nmap -sV -sC -oN <output.txt> -p- MACHINE_IP` (`-oN` is for normal output)
 ## ENUM shares for smb 
 `nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse MACHINE_IP`
 ## ENUM network file system
