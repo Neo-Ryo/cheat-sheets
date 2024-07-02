@@ -18,4 +18,4 @@
 
 # HYDRA
 ## BRUTE FORCE WEB FORM
-`hydra -s <port> -L </path/to/namelist> -P </path/to/passwordlist> <TARGET_IP> http-post-form '<route_uri>:<field1>=^USER^&<field2>=^PASS^:<invalid value returned>' -f -o <output_file>
+`hydra -s <port> -L </path/to/namelist> -P </path/to/passwordlist> <TARGET_IP> http-post-form '<route_uri>:<field1>=^USER^&<field2>=^PASS^:<invalid value returned>' -f -o <output_file>`
