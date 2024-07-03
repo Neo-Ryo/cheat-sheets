@@ -7,8 +7,10 @@
 `nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount MACHINE_IP`
 
 ## SMB
-### SMBCLIENT Linux
+### SMBCLIENT Linux connect to smb as anonymous
 `smbclient //MACHINE_IP/<path>`
+### SMBCLIENT Linux connect to smb as milesdyson
+`smbclient -U milesdyson //$ip/milesdyson`
 ### Download files in a repo
 `smbget -R smb://MACHINE_IP/anonymous`
 ### Download recursivly the current content
