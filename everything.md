@@ -11,6 +11,13 @@
 `smbclient //MACHINE_IP/<path>`
 ### Download files in a repo
 `smbget -R smb://MACHINE_IP/anonymous`
+### Download recursivly the current content
+```
+smb: \> mask ""
+smb: \> recurse ON
+smb: \> prompt OFF
+smb: \> mget *
+```
 
 ## SSH
 ### login ssh with a private key
