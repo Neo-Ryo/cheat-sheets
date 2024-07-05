@@ -7,6 +7,8 @@
 `nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount MACHINE_IP`
 
 ## SMB
+### SMBCLIENT enumerate shares
+`smbclient -L \\\\MACHINE_IP\\`
 ### SMBCLIENT Linux connect to smb as anonymous
 `smbclient //MACHINE_IP/<path>`
 ### SMBCLIENT Linux connect to smb as milesdyson
