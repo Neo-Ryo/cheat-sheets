@@ -40,3 +40,7 @@ Reverse SSH port forwarding specifies that the given port on the remote server h
 ## WEB ENUM
 ### GOBUSTER
 `gobuster dir -u http://<IP_TARGET> -w </path/to/wordlist> -x php,sh,txt,html`
+
+## REVERSE SHELL
+### Upgrade reverse shell (according to python avalaible version)
+`python -c 'import pty; pty.spawn("/bin/bash")'`
