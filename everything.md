@@ -36,3 +36,7 @@ Reverse SSH port forwarding specifies that the given port on the remote server h
 ## HYDRA
 ### BRUTE FORCE WEB FORM
 `hydra -s <port> -L </path/to/namelist> -P </path/to/passwordlist> <TARGET_IP> http-post-form '<route_uri>:<field1>=^USER^&<field2>=^PASS^:<invalid value returned>' -f -o <output_file>`
+
+## WEB ENUM
+### GOBUSTER
+`gobuster dir -u http://<IP_TARGET> -w </path/to/wordlist> -x php,sh,txt,html`
