@@ -25,3 +25,6 @@ smb: \> recurse ON
 smb: \> prompt OFF
 smb: \> mget *
 ```
+## WEB ENUM
+### GOBUSTER
+`gobuster dir -u http://<IP_TARGET> -w </path/to/wordlist> -x php,sh,txt,html`
