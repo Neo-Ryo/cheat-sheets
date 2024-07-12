@@ -1,0 +1,3 @@
+## RUSTSCAN
+`rustscan -a <IP>`
+
