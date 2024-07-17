@@ -28,3 +28,6 @@ smb: \> mget *
 ## WEB ENUM
 ### GOBUSTER
 `gobuster dir -u http://<IP_TARGET> -w </path/to/wordlist> -x php,sh,txt,html`
+
+### FFUF
+`ffuf -u http://<IP_TARGET>/FUZZ -w /path/to/wrdlist`
