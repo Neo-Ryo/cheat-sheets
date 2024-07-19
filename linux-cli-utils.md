@@ -19,3 +19,8 @@
 `cat file1.txt file2.txt file3.txt > combined_list.txt`
 ### sort and unique
 `sort combined_list.txt | uniq -u > cleaned_combined_list.txt`
+
+## WEB CRAWLING
+
+### get words from a website
+`cewl -w list.txt -d 5 -m 5 http://thm.labs` (`-d 5` is for the depth level of crawling and `-w 5` is for word length)
