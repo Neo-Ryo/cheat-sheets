@@ -31,3 +31,9 @@ smb: \> mget *
 
 ### FFUF
 `ffuf -u http://<IP_TARGET>/FUZZ -w /path/to/wrdlist`
+
+### wpscan
+#### enum potential users
+`wpscan --url <url> -e u`
+#### bruteforce with found user
+`wpscan --url <url> -U <user1,user2> -P /opt/wordlists/rockyou.txt --password-attack wp-login -t 64`
