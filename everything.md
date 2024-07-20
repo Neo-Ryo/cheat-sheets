@@ -16,3 +16,8 @@ Reverse SSH port forwarding specifies that the given port on the remote server h
 ## REVERSE SHELL
 ### Upgrade reverse shell (according to python avalaible version)
 `python -c 'import pty; pty.spawn("/bin/bash")'`
+
+
+## CHECK IMAGES
+### HIDDEN DATA (bmp, jpeg, wav and au files)
+`steghide extract -sf <file.extension>`
