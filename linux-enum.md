@@ -1,3 +1,6 @@
+### find file
+`find / 2>/dev/null | grep file.txt`
+
 ### Enum files SUID
 `find / -perm -4000 2>/dev/null`
 
