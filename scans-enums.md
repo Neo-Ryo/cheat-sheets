@@ -37,3 +37,18 @@ smb: \> mget *
 `wpscan --url <url> -e u`
 #### bruteforce with found user
 `wpscan --url <url> -U <user1,user2> -P /opt/wordlists/rockyou.txt --password-attack wp-login -t 64`
+
+## POP3
+### CONNECTION
+`telnet $ip <PORT>`
+
+### AUTH
+
+`USER <username>`
+`PASS <password>`
+
+### ENUM
+#### list emails
+`list`
+#### check one
+`retr <email number>`
