@@ -21,3 +21,5 @@ Reverse SSH port forwarding specifies that the given port on the remote server h
 ## CHECK IMAGES
 ### HIDDEN DATA (bmp, jpeg, wav and au files)
 `steghide extract -sf <file.extension>`
+### METADATA READER
+`exiftool <file.ext>`
