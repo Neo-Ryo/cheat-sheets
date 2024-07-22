@@ -20,6 +20,11 @@ PS \
 
 # FIREWALL
 ### get firewall infos/status
-`Get-NetFirewallProfile | Format-Table Name, Enabled`
-if we have privelges we can disable firewall
-`Set-NetFirewallProfile -Profile Domain, Public, Private -Enabled False`
+`Get-NetFirewallProfile | Format-Table Name, Enabled` \
+if we have privelges we can disable firewall \
+`Set-NetFirewallProfile -Profile Domain, Public, Private -Enabled False` \
+### check rules
+`Get-NetFirewallRule | select DisplayName, Enabled, Description`
+### test connections
+`Test-NetConnection -ComputerName 127.0.0.1 -Port 80` \
+`(New-Object System.Net.Sockets.TcpClient("127.0.0.1", "80")).Connected` \
