@@ -9,3 +9,7 @@ cmd \
 or POWERSHELL \
 `Get-CimInstance -Namespace root/SecurityCenter2 -ClassName AntivirusProduct` \
 Note that Windows servers may not have SecurityCenter2 namespace. Instead, it works for Windows workstations! \
+
+### Windows defender
+PS \
+`Get-Service WinDefend` \
