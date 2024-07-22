@@ -1,0 +1,4 @@
+# ACTIVE DIRECTORY
+
+### SEARCH FOR USERS IN AD
+`Get-ADUser -Filter * -SearchBase "CN=Users,DC=THMREDTEAM,DC=COM"`
