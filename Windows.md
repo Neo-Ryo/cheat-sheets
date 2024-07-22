@@ -13,3 +13,13 @@ Note that Windows servers may not have SecurityCenter2 namespace. Instead, it wo
 ### Windows defender
 PS \
 `Get-Service WinDefend` \
+
+#### Windows defender status
+PS \
+`Get-MpComputerStatus | select RealTimeProtectionEnabled`
+
+# FIREWALL
+### get firewall infos/status
+`Get-NetFirewallProfile | Format-Table Name, Enabled`
+if we have privelges we can disable firewall
+`Set-NetFirewallProfile -Profile Domain, Public, Private -Enabled False`
