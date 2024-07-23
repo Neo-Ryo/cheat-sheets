@@ -28,3 +28,10 @@ if we have privelges we can disable firewall \
 ### test connections
 `Test-NetConnection -ComputerName 127.0.0.1 -Port 80` \
 `(New-Object System.Net.Sockets.TcpClient("127.0.0.1", "80")).Connected` \
+# EVENT LOGS
+`Get-EventLog -List`
+### CHECK SYSMON
+`Get-Process | Where-Object { $_.ProcessName -eq "Sysmon" }`\
+`Get-CimInstance win32_service -Filter "Description = 'System Monitor service'"`\
+`Get-Service | where-object {$_.DisplayName -like "*sysm*"}`\
+`reg query HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Microsoft-Windows-Sysmon/Operational`
