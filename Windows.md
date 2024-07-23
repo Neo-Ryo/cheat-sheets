@@ -57,3 +57,6 @@ Provide the DNS to ask (local machine or other)\
 `>server <IP>`\
 DNS zone transfer on the domain we find in the AD environment.\
 `>ls -d <DOMAIN>`
+
+---
+Neo-Ryo
