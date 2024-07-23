@@ -46,3 +46,12 @@ if we have privelges we can disable firewall \
 `Get-Process -Name <process_exe>`
 #### LISTENNING PORT
 `netstat -noa |findstr "LISTENING" |findstr <ID>`
+
+# DNS
+
+### DNS TRANSFERT
+`nslookup.exe`\
+Provide the DNS to ask (local machine or other)\
+`>server <IP>`\
+DNS zone transfer on the domain we find in the AD environment.\
+`>ls -d <DOMAIN>`
