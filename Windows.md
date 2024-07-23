@@ -34,6 +34,15 @@ if we have privelges we can disable firewall \
 `Get-Process | Where-Object { $_.ProcessName -eq "Sysmon" }`\
 `Get-CimInstance win32_service -Filter "Description = 'System Monitor service'"`\
 `Get-Service | where-object {$_.DisplayName -like "*sysm*"}`\
-`reg query HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Microsoft-Windows-Sysmon/Operational`
-#####
+`reg query HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Microsoft-Windows-Sysmon/Operational`\
 `findstr /si '<ProcessCreate onmatch="exclude">' C:\tools\*`
+
+#  RUNNING SERVICES
+
+### ENUMERATE
+`net start`
+### GET DETAILS ON A SPECIFIC ONE
+`wmic service where "name like '<SERVICE_NAME>'" get Name,PathName`\
+`Get-Process -Name <process_exe>`
+#### LISTENNING PORT
+`netstat -noa |findstr "LISTENING" |findstr <ID>`
