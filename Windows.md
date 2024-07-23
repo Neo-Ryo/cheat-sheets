@@ -46,6 +46,8 @@ if we have privelges we can disable firewall \
 `Get-Process -Name <process_exe>`
 #### LISTENNING PORT
 `netstat -noa |findstr "LISTENING" |findstr <ID>`
+#### System update infos
+`wmic qfe get Caption,Description.`
 
 # DNS
 
