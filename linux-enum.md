@@ -9,3 +9,5 @@
 
 ### check binary env and so
 `ltrace <some binaries>`
+### check who is currently connected on the machine
+`who`
