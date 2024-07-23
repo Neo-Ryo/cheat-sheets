@@ -58,5 +58,15 @@ Provide the DNS to ask (local machine or other)\
 DNS zone transfer on the domain we find in the AD environment.\
 `>ls -d <DOMAIN>`
 
+
+# USER
+### enum users
+`net user`\
+`net localgroup`\
+`net localgroup administrators`
+
+### enum privileges
+`whoami /priv`\
+`whoami /groups`
 ---
 Neo-Ryo
