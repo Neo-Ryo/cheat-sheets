@@ -13,3 +13,5 @@
 `who`
 ### check who is currently connected on the machine and what they are doing
 `w`
+### displays a listing of the last logged-in users
+`last`
