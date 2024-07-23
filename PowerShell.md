@@ -1,5 +1,7 @@
 ## Find file
 `Get-ChildItem -Path <path\to\check> -Recurse | Select-Object -Property Name, Directory | Where-Object -Property Name -Contains <filename>`
+## Hideen files
+`Get-ChildItem -Hidden -Path C:\Users\kkidd\Desktop\`
 ## Find file and get content
 `Get-ChildItem “*<type of file (eg: .txt)>*” -Path C:\ -Recurse -ErrorAction SilentlyContinue | Get-Content`
 ## Decode base64
