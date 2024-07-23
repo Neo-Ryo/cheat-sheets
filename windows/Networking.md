@@ -4,7 +4,9 @@
 `ipconfig /all`
 
 ### enum services and port listenning
-`netstat -a`
+`netstat -a`\
+and get program running\
+`netstat -abn`
 
 ### Dicover system on the same LAN
 `arp -a`
