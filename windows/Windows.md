@@ -3,6 +3,12 @@
 ### SEARCH FOR USERS IN AD
 `Get-ADUser -Filter * -SearchBase "CN=Users,DC=THMREDTEAM,DC=COM"`
 
+### ADD User in admin group
+`net localgroup administrators <USER> /add`\
+for more stealth add user to "Backup Operators"
+### ADD User to RDP group
+`net localgroup "Remote Management Users" <USER> /add`
+
 # ANTIVIRUS ENUM
 cmd \
 `wmic /namespace:\\root\securitycenter2 path antivirusproduct` \
