@@ -31,6 +31,10 @@ smb: \> mget *
 
 ### FFUF
 `ffuf -u http://<IP_TARGET>/FUZZ -w /path/to/wrdlist`
+#### FFUF subdomain
+`ffuf -u http://domain.name -w /path/to/wrdlist -H "Host:FUZZ.domain.name"`
+#### FFUF brute force
+`ffuf -u 'http://domain.name/post' -X POST -d 'username=FUZZ&password=admin' -H 'Content-Type: application/x-www-form-urlencoded' -w /usr/share/wordlists/rockyou.txt -mc all -t 100 -fr "Error message"`
 
 ### wpscan
 #### enum potential users
