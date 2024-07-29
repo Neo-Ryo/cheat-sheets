@@ -35,7 +35,8 @@ smb: \> mget *
 `ffuf -u http://domain.name -w /path/to/wrdlist -H "Host:FUZZ.domain.name"`
 #### FFUF brute force
 `ffuf -u 'http://domain.name/post' -X POST -d 'username=FUZZ&password=admin' -H 'Content-Type: application/x-www-form-urlencoded' -w /usr/share/wordlists/rockyou.txt -mc all -t 100 -fr "Error message"`
-
+#### FFUF brute force multiple input
+`ffuf -u 'http://cherryontop.thm/content.php?facts=IDS&user=USER' -w <(seq 1 100):IDS -w base32-usernames.txt:USER`
 ### wpscan
 #### enum potential users
 `wpscan --url <url> -e u`
