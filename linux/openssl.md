@@ -13,3 +13,11 @@ The arguments in the above command are:
     - `-keyout PRIVATE_KEY` specifies the filename where we want to save our private key
     - `-out CERTIFICATE` specifies the filename to which we want to write the certificate request
 
+The above command returns:
+
+    - Private key: thm-reverse.key
+    - Certificate: thm-reverse.crt
+
+The Privacy Enhanced Mail (PEM) .pem file requires the concatenation of the private key .key and the certificate .crt files. We can use cat to create our PEM file from the two files that we have just created:
+
+`cat thm-reverse.key thm-reverse.crt > thm-reverse.pem`
