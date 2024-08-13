@@ -19,3 +19,6 @@
 ##### AD object that where changed after a certain date
 `$ChangeDate = New-Object DateTime(2022, 02, 28, 12, 00, 00)`
 `Get-ADObject -Filter 'whenChanged -gt $ChangeDate' -includeDeletedObjects -Server <domaine.name>`
+
+#####  account that have a bad password attempt count gt 0
+`Get-ADObject -Filter 'badPwdCount -gt 0' -Server <domain.name>`
