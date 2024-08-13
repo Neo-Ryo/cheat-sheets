@@ -9,3 +9,5 @@
 ` (Get-ADUser <user name> -Properties *).Description`
 
 `Get-ADUser -Identity <user.name> -Server <domaine.name> -Properties *`
+
+`Get-ADUser -Filter 'Name -like "*<partialname>"' -Server <domain.name> | Format-Table Name,SamAccountName -A`
