@@ -6,3 +6,4 @@
 `$Searchbase = (Get-ADOrganizationalUnit -Filter {Name -eq "People"}).DistinguishedName`\
 `(Get-ADOrganizationalUnit -Filter * -SearchBase $Searchbase).Count`
 
+` (Get-ADUser <user name> -Properties *).Description`
