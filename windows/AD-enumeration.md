@@ -22,3 +22,6 @@
 
 #####  account that have a bad password attempt count gt 0
 `Get-ADObject -Filter 'badPwdCount -gt 0' -Server <domain.name>`
+
+##### alter AD object
+`Set-ADAccountPassword -Identity <user.name> -Server <domain.name> -OldPassword (ConvertTo-SecureString -AsPlaintext "old" -force) -NewPassword (ConvertTo-SecureString -AsPlainText "new" -Force)`
