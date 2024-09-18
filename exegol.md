@@ -28,3 +28,5 @@ So what you need is uncomment the line you need and replace the values with the 
 export TARGET='10.10.251.98'
 export ATTACKER_IP='tun0'
 ```
+You will have to restart your terminal after any modification of the file by running:
+`exec zsh`
